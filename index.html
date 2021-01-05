@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beastnator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&swap');
+        *{
+            margin : 0;
+            padding : 0;
+            font-family: 'Poppins','sans-serif' ;
+        }
+        body{
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            overflow : hidden;
+            background-color: #01185A;
+        }
+        div a{
+            position: relative;
+            display: block;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            font-size: 6em;
+            font-weight: 900;
+            text-decoration: none;
+        }
+        div :hover {
+            color:#fff;
+            -webkit-text-stroke: 1px black;
+            transition: 0.7s;
+        }
+        div  :before,div :after{
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+        div :hover:before
+        {
+            color: #03A3FF;
+            z-index: 1;
+            -webkit-text-stroke: 1px white;
+            transform: translate(10px,-10px);
+        }
+        div :hover:after
+        {
+            color:#01185A;
+            z-index: 2;
+            -webkit-text-stroke: 1px white;
+            transform: translate(20px,-20px);
+        }
+        @media only screen and (max-width: 800px) {
+            div a{
+                position: relative;
+            display: block;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            font-size: 3.5em;
+            font-weight: 900;
+            text-decoration: none;
+            line-height: 1.2em;
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="head"><a href="nav.html" data-text="Beastnator">Beastnator</a></div>
+    <script type ="text/javascipt">
+    </script>
+</body>
+</html>
